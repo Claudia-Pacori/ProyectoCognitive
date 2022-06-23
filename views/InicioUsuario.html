@@ -63,7 +63,10 @@
     <!-- ======= Breadcrumbs ======= -->
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
-        <h1>Bienvenido @nombre</h1>
+        <h1>Bienvenido</h1>
+        <% usuarios.forEach(function(usuario) { %>
+          <p>Name: <%= usuario.nombre %></p>
+        <% }); %>
 
       </div>
     </section><!-- End Breadcrumbs -->

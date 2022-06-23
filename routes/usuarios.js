@@ -11,7 +11,8 @@ router.post('/addusuario', function(req, res) {
 });
 
 router.get('/getusuario', function(req, res) {
-    usuarios.list(req,res);
+    //usuarios.list(req,res);
+    res.sendFile(path.resolve('views/InicioUsuario.html'));
 });
 
 module.exports = router;
