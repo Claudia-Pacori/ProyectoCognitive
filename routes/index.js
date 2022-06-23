@@ -24,6 +24,14 @@ router.get('/iniciosesion',function(req,res){
   res.sendFile(path.resolve('views/IniciarSesion.html'));
 });
 
+router.get('/admin',function(req,res){
+  res.sendFile(path.resolve('views/InicioAdministrador.html'));
+});
+
+router.get('/user',function(req,res){
+  res.sendFile(path.resolve('views/InicioUsuario.html'));
+});
+
 // Anadido : Registro
 router.use (function (req,res,next) {
   console.log('/registro' + req.method);
